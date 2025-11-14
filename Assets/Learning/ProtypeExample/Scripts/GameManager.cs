@@ -15,6 +15,7 @@ namespace Learning.Prototype {
     public record PlayerInfo(string Name, int Level, float Health, int HighScore);
 
     public sealed class GameManager : MonoBehaviour {
+        // data
         public static bool godMode = false;
         public static int score = 0;
         public static int highScore = 0;
@@ -31,6 +32,7 @@ namespace Learning.Prototype {
             { Weapons.RocketLauncher, 0 }
         };
 
+        // references
         public CameraControl cameraControl;
         public Player player;
         public Enemy enemyPrefab;
